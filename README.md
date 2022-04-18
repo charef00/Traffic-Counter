@@ -337,7 +337,7 @@ In the event that there are more input detections than existing objects being tr
 1- Assigning it a new object ID
 2- Storing the centroid of the bounding box coordinates for that object
     
-**Step #5: Deregister old objects **
+**Step #5: Deregister old objects**
 
 Any reasonable object tracking algorithm needs to be able to handle when an object has been lost, disappeared, or left the field of view.
 Exactly how you handle these situations is really dependent on where your object tracker is meant to be deployed.
