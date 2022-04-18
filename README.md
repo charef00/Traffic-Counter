@@ -311,11 +311,13 @@ The centroid tracking algorithm is a multi-step process. We will review each of 
 **Step #1: Accept bounding box coordinates and compute centroids**
     
 <img src="docs/1.JPG" />
+The centroid tracking algorithm assumes that we are passing in a set of bounding box (x, y)-coordinates for each detected object in every single frame.
 
 **Step #2: Compute Euclidean distance between new bounding boxes and existing objects**
     
+    
 <img src="docs/2.JPG" />
-
+For every subsequent frame in our video stream we apply Step #1 of computing object centroids; however, instead of assigning a new unique ID to each detected object (which would defeat the purpose of object tracking), we first need to determine if we can associate the new object centroids (yellow) with the old object centroids (purple). To accomplish this process, we compute the Euclidean distance (highlighted with green arrows) between each pair of existing object centroids and input object centroids.
     
 **Step #3: Update (x, y)-coordinates of existing objects**
     
