@@ -305,15 +305,20 @@ Object tracking is the process of:
     
 Furthermore, object tracking allows us to apply a unique ID to each tracked object, making it possible for us to count unique objects in a video. Object tracking is paramount to building a ***Traffic counter***
 
+An ideal object tracking algorithm will:
 
+Only require the object detection phase once (i.e., when the object is initially detected)
+Will be extremely fast — much faster than running the actual object detector itself
+Be able to handle when the tracked object “disappears” or moves outside the boundaries of the video frame
+Be robust to occlusion
+Be able to pick up objects it has “lost” in between frames
+This is a tall order for any computer vision or image processing algorithm and there are a variety of tricks we can play to help improve our object trackers.
+
+But before we can build such a robust method we first need to study the fundamentals of object tracking.
+    
+    
 ## Thanks
 
-https://github.com/Tencent/ncnn
-
-https://github.com/open-mmlab/mmdetection
-
-https://github.com/implus/GFocal
-
-https://github.com/cmdbug/YOLOv5_NCNN
-
-https://github.com/rbgirshick/yacs
+https://github.com/RangiLyu/nanodet
+https://github.com/ultralytics/yolov5
+https://github.com/pytorch/android-demo-app
