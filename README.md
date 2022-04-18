@@ -317,16 +317,25 @@ The centroid tracking algorithm assumes that we are passing in a set of bounding
     
     
 <img src="docs/2.JPG" />
+    
 For every subsequent frame in our video stream we apply Step #1 of computing object centroids; however, instead of assigning a new unique ID to each detected object (which would defeat the purpose of object tracking), we first need to determine if we can associate the new object centroids (yellow) with the old object centroids (purple). To accomplish this process, we compute the Euclidean distance (highlighted with green arrows) between each pair of existing object centroids and input object centroids.
     
 **Step #3: Update (x, y)-coordinates of existing objects**
     
 <img src="docs/3.JPG" />
 
+The primary assumption of the centroid tracking algorithm is that a given object will potentially move in between subsequent frames, but the distance between the centroids for frames F_t and F_{t + 1} will be smaller than all other distances between objects.
+
+Therefore, if we choose to associate centroids with minimum distances between subsequent frames we can build our object tracker.
     
 **Step #4: Register new objects**
     
 <img src="docs/4.JPG" />
+    
+In the event that there are more input detections than existing objects being tracked, we need to register the new object. “Registering” simply means that we are adding the new object to our list of tracked objects by:
+   
+1- Assigning it a new object ID
+2- Storing the centroid of the bounding box coordinates for that object
     
 **Step #5: Deregister old objects **
 
