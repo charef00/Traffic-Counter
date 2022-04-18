@@ -305,20 +305,27 @@ Object tracking is the process of:
     
 Furthermore, object tracking allows us to apply a unique ID to each tracked object, making it possible for us to count unique objects in a video. Object tracking is paramount to building a ***Traffic counter***
 
-An ideal object tracking algorithm will:
-
-Only require the object detection phase once (i.e., when the object is initially detected)
-Will be extremely fast — much faster than running the actual object detector itself
-Be able to handle when the tracked object “disappears” or moves outside the boundaries of the video frame
-Be robust to occlusion
-Be able to pick up objects it has “lost” in between frames
-This is a tall order for any computer vision or image processing algorithm and there are a variety of tricks we can play to help improve our object trackers.
-
-But before we can build such a robust method we first need to study the fundamentals of object tracking.
+## The centroid tracking algorithm
+The centroid tracking algorithm is a multi-step process. We will review each of the tracking steps in this section.
     
+**Step #1: Accept bounding box coordinates and compute centroids**
+    
+    
+**Step #2: Compute Euclidean distance between new bounding boxes and existing objects**
+    
+**Step #3: Update (x, y)-coordinates of existing objects**
+    
+**Step #4: Register new objects**
+    
+**Step #5: Deregister old objects **
+
+Any reasonable object tracking algorithm needs to be able to handle when an object has been lost, disappeared, or left the field of view.
+Exactly how you handle these situations is really dependent on where your object tracker is meant to be deployed.
     
 ## Thanks
 
 https://github.com/RangiLyu/nanodet
+    
 https://github.com/ultralytics/yolov5
+    
 https://github.com/pytorch/android-demo-app
