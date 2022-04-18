@@ -294,7 +294,7 @@ Please refer to [android_demo](demo_android_ncnn/README.md).
 
 ****
 
-## object tracking with
+## object tracking
     
 
 Object tracking is the process of:
