@@ -305,7 +305,6 @@ Object tracking is the process of:
     
 Furthermore, object tracking allows us to apply a unique ID to each tracked object, making it possible for us to count unique objects in a video. Object tracking is paramount to building a ***Traffic counter***
 
-****
 
 ## Thanks
 
