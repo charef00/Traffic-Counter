@@ -310,21 +310,21 @@ The centroid tracking algorithm is a multi-step process. We will review each of 
     
 **Step #1: Accept bounding box coordinates and compute centroids**
     
-<img src="docs/imgs/1.jpg" />
+<img src="docs/imgs/1.JPG" />
 
 **Step #2: Compute Euclidean distance between new bounding boxes and existing objects**
     
-    <img src="docs/imgs/2.jpg" />
+<img src="docs/imgs/2.JPG" />
 
     
 **Step #3: Update (x, y)-coordinates of existing objects**
     
-    <img src="docs/imgs/3.jpg" />
+<img src="docs/imgs/3.JPG" />
 
     
 **Step #4: Register new objects**
     
-    <img src="docs/imgs/4.jpg" />
+<img src="docs/imgs/4.JPG" />
     
 **Step #5: Deregister old objects **
 
