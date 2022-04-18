@@ -346,7 +346,7 @@ Exactly how you handle these situations is really dependent on where your object
 
 ### Android demo
 
-![android_demo](docs/imgs/Android_demo.jpg)
+![android_demo](docs/demo.jpg)
     
 ## Thanks
 
