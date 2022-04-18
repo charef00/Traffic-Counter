@@ -342,6 +342,12 @@ In the event that there are more input detections than existing objects being tr
 Any reasonable object tracking algorithm needs to be able to handle when an object has been lost, disappeared, or left the field of view.
 Exactly how you handle these situations is really dependent on where your object tracker is meant to be deployed.
     
+## Demo of Traffic counter APP
+
+### Android demo
+
+![android_demo](docs/imgs/Android_demo.jpg)
+    
 ## Thanks
 
 https://github.com/RangiLyu/nanodet
