@@ -294,7 +294,8 @@ Please refer to [android_demo](demo_android_ncnn/README.md).
 
 ****
 
-## Citation
+## Our work
+    
 
 If you find this project useful in your research, please consider cite:
 
