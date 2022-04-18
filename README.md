@@ -297,16 +297,13 @@ Please refer to [android_demo](demo_android_ncnn/README.md).
 ## Our work
     
 
-If you find this project useful in your research, please consider cite:
+Object tracking is the process of:
 
-```BibTeX
-@misc{=nanodet,
-    title={NanoDet-Plus: Super fast and high accuracy lightweight anchor-free object detection model.},
-    author={RangiLyu},
-    howpublished = {\url{https://github.com/RangiLyu/nanodet}},
-    year={2021}
-}
-```
+    1. **Taking an initial set of object detections (such as an input set of bounding box coordinates)**
+    2. **reating a unique ID for each of the initial detections**
+    3. **And then tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs**
+    
+Furthermore, object tracking allows us to apply a unique ID to each tracked object, making it possible for us to count unique objects in a video. Object tracking is paramount to building a ***Traffic counter***
 
 ****
 
