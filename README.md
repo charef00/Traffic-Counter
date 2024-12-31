@@ -1,3 +1,16 @@
+## Demo of Traffic counter APP
+
+### Android demo
+
+
+Watch the video : https://drive.google.com/file/d/1147Uqs8aCpZ7NmI1Byra4Csq0FXvYAE-/view?usp=sharing
+
+![android_demo](docs/demo.jpg)
+    
+## download android app from here
+    
+https://drive.google.com/file/d/1Ddy2_gJp5eQj2TuasDTdHJvM0pkzKl_d/view?usp=sharing
+
 <div align="center">
 
 <img src="docs/imgs/Title.jpg" />
@@ -54,83 +67,7 @@ YOLOv5-n       | 640*640 |   28.4   | -                    | 44.39ms            
 FBNetV5        | 320*640 |   30.4   | -                    | -                    | 1.8G       | -         |   -
 MobileDet      | 320*320 |   25.6   | -                    | -                    | 0.9G       | -         |   -
 
-***Download pre-trained models and find more models in [Model Zoo](#model-zoo) or in [Release Files](https://github.com/RangiLyu/nanodet/releases)***
 
-<details>
-    <summary>Notes (click to expand)</summary>
-
-* ARM Performance is measured on Kirin 980(4xA76+4xA55) ARM CPU based on ncnn. You can test latency on your phone with [ncnn_android_benchmark](https://github.com/nihui/ncnn-android-benchmark).
-
-* Intel CPU Performance is measured Intel Core-i7-8700 based on OpenVINO.
-
-* NanoDet mAP(0.5:0.95) is validated on COCO val2017 dataset with no testing time augmentation.
-
-* YOLOv3&YOLOv4 mAP refers from [Scaled-YOLOv4: Scaling Cross Stage Partial Network](https://arxiv.org/abs/2011.08036).
-
-</details>
-
-****
-
-## NEWS!!!
-
-* [2021.12.25] **NanoDet-Plus** release! Adding **AGM**(Assign Guidance Module) & **DSLA**(Dynamic Soft Label Assigner) to improve **7 mAP** with only a little cost.
-
-Find more update notes in [Update notes](docs/update.md).
-## Demo
-
-### Android demo
-
-![android_demo](docs/imgs/Android_demo.jpg)
-
-Android demo project is in ***demo_android_ncnn*** folder. Please refer to [Android demo guide](demo_android_ncnn/README.md).
-
-Here is a better implementation 👉 [ncnn-android-nanodet](https://github.com/nihui/ncnn-android-nanodet)
-
-### NCNN C++ demo
-
-C++ demo based on [ncnn](https://github.com/Tencent/ncnn) is in ***demo_ncnn*** folder. Please refer to [Cpp demo guide](demo_ncnn/README.md).
-
-### MNN demo
-
-Inference using [Alibaba's MNN framework](https://github.com/alibaba/MNN) is in ***demo_mnn*** folder. Please refer to [MNN demo guide](demo_mnn/README.md).
-
-### OpenVINO demo
-
-Inference using [OpenVINO](https://01.org/openvinotoolkit) is in ***demo_openvino*** folder. Please refer to [OpenVINO demo guide](demo_openvino/README.md).
-
-### Web browser demo
-
-https://nihui.github.io/ncnn-webassembly-nanodet/
-
-### Pytorch demo
-
-First, install requirements and setup NanoDet following installation guide. Then download COCO pretrain weight from here
-
-👉[COCO pretrain checkpoint](https://github.com/RangiLyu/nanodet/releases/download/v1.0.0-alpha-1/nanodet-plus-m_416_checkpoint.ckpt)
-
-The pre-trained weight was trained by the config `config/nanodet-plus-m_416.yml`.
-
-* Inference images
-
-```bash
-python demo/demo.py image --config CONFIG_PATH --model MODEL_PATH --path IMAGE_PATH
-```
-
-* Inference video
-
-```bash
-python demo/demo.py video --config CONFIG_PATH --model MODEL_PATH --path VIDEO_PATH
-```
-
-* Inference webcam
-
-```bash
-python demo/demo.py webcam --config CONFIG_PATH --model MODEL_PATH --camid YOUR_CAMERA_ID
-```
-
-Besides, We provide a notebook [here](./demo/demo-inference-with-pytorch.ipynb) to demonstrate how to make it work with PyTorch.
-
-****
 
 ## Install
 
@@ -342,17 +279,7 @@ In the event that there are more input detections than existing objects being tr
 Any reasonable object tracking algorithm needs to be able to handle when an object has been lost, disappeared, or left the field of view.
 Exactly how you handle these situations is really dependent on where your object tracker is meant to be deployed.
     
-## Demo of Traffic counter APP
 
-### Android demo
-
-
-[Watch the video] : https://drive.google.com/path_to_video](https://drive.google.com/file/d/1147Uqs8aCpZ7NmI1Byra4Csq0FXvYAE-/view?usp=sharing
-![android_demo](docs/demo.jpg)
-    
-## download android app from here
-    
-https://drive.google.com/file/d/1Ddy2_gJp5eQj2TuasDTdHJvM0pkzKl_d/view?usp=sharing
 ## Thanks
 
 https://github.com/RangiLyu/nanodet
