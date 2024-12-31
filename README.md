@@ -13,7 +13,6 @@ https://drive.google.com/file/d/1Ddy2_gJp5eQj2TuasDTdHJvM0pkzKl_d/view?usp=shari
 
 <div align="center">
 
-<img src="docs/imgs/Title.jpg" />
 
 # NanoDet-Plus
 **Super fast and high accuracy lightweight anchor-free object detection model. Real-time on mobile devices.**
