@@ -346,6 +346,7 @@ Exactly how you handle these situations is really dependent on where your object
 
 ### Android demo
 
+![android_demo](docs/v.mp4)
 ![android_demo](docs/demo.jpg)
     
 ## download android app from here
