@@ -346,7 +346,7 @@ Exactly how you handle these situations is really dependent on where your object
 
 ### Android demo
 
-![android_demo](docs/v.mp4)
+
 [Watch the video]([https://drive.google.com/path_to_video](https://drive.google.com/file/d/1147Uqs8aCpZ7NmI1Byra4Csq0FXvYAE-/view?usp=sharing))
 ![android_demo](docs/demo.jpg)
     
